@@ -1,0 +1,31 @@
+{
+  extends: "nava",
+  env: {
+    mocha: true
+  },
+  parserOptions: {
+    ecmaVersion: 2017
+  },
+  rules: {
+    comma-dangle: ["error", "always-multiline"],
+    indent: ["error", 2, {"CallExpression": {"arguments": 2},
+                          "FunctionDeclaration": {"parameters": 2}}],
+    max-len: ["error", {"code": 100}],
+    multiline-comment-style: ["error", "separate-lines"],
+    no-extra-semi: "error",
+    // we rely on the side effect of constructors throwing on invalid props
+    no-new: "off",
+    // we use es6 and eslint-config-nava is not es6 only yet
+    prefer-const: "error",
+    no-var: "error",
+    "promise/no-native": "error",
+    "promise/catch-or-return": "error",
+    "promise/no-return-wrap": "error",
+    "promise/valid-params": "error",
+    "quotes": ["error", "double", {"allowTemplateLiterals": true}],
+    "space-before-function-paren": ["error", "never"]
+  },
+  globals: {
+    "rootRequire": true
+  }
+}
