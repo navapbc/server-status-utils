@@ -4,7 +4,7 @@ This module provides an internal status page for Express based servers. The
 status page is aimed for developers and shows useful info for diagnostics or
 troubleshooting, for example the application version and recent requests.
 
-See an [example of the status page](example/example_status.html).
+See an [example of the status page](http://htmlpreview.github.io/?https://github.com/navapbc/server-status-utils/blob/master/example/example_status.html).
 
 ## Usage
 
