@@ -11,6 +11,9 @@
     "example": "example",
     "lib": "lib"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "example": "node example/example_server.js",
     "pretest": "eslint example index.js lib test",
