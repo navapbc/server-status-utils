@@ -10,7 +10,7 @@ describe("lib/program_meta", () => {
   it("programMeta.getProgramVersion reads data from package.data", () => {
     const expectedVersion = {
       "name": "server-status-utils",
-      "version": "1.0.1",
+      "version": "1.0.2",
     }
     const version = programMeta.getProgramVersion()
     assert.deepEqual(version, expectedVersion)

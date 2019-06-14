@@ -1,6 +1,6 @@
 {
   "name": "server-status-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An internal status page for Express servers.",
   "main": "index.js",
   "engines": {
