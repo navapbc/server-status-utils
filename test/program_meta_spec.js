@@ -9,8 +9,8 @@ const programMeta = require("../lib/program_meta")
 describe("lib/program_meta", () => {
   it("programMeta.getProgramVersion reads data from package.data", () => {
     const expectedVersion = {
-      "name": "server-status-utils",
-      "version": "1.0.2",
+      name: "server-status-utils",
+      version: "1.0.2",
     }
     const version = programMeta.getProgramVersion()
     assert.deepEqual(version, expectedVersion)
@@ -23,8 +23,8 @@ describe("lib/program_meta", () => {
       throw err
     }
     const expectedVersion = {
-      "name": process.argv[1],
-      "version": "unknown",
+      name: process.argv[1],
+      version: "unknown",
     }
     const version = programMeta.getProgramVersion(readFileSync)
     assert.deepEqual(version, expectedVersion)

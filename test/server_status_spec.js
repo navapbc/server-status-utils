@@ -12,7 +12,7 @@ const serverStatus = require("../lib/server_status")
 
 describe("server-status router", () => {
   beforeEach(() => {
-    this.clock = sinon.useFakeTimers({toFake: ["Date"]})
+    this.clock = sinon.useFakeTimers({ toFake: ["Date"] })
     this.app = express()
     this.app.enable("trust proxy") // For testing request IP using X-Forwarded-For header.
     const ss = new serverStatus.ServerStatus()
