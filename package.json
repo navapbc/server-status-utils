@@ -41,7 +41,7 @@
     "eslint-config-nava": "8",
     "express": "4",
     "libxmljs": "0.19",
-    "mocha": "7",
+    "mocha": "10",
     "nyc": "15",
     "sinon": "9",
     "supertest": "4"
